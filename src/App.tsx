@@ -4,8 +4,8 @@ import './App.css';
 // import './lessons/lesson2/lesson2';
 // import Lesson3 from './lessons/lesson3/Lesson3';
 // import Lesson4 from './lessons/lesson4/Lesson4';
-import './lessons/lesson5/lesson5';
-// import './lessons/lesson6/lesson6';
+// import './lessons/lesson5/lesson5';
+import './lessons/lesson6/lesson6';
 // import './lessons/lesson7/lesson7';
 // import './lessons/lesson8/lesson8';
 
@@ -15,7 +15,8 @@ function App() {
             {/*<Lesson1 />*/}
             {/*<Lesson3 />*/}
             {/*<Lesson4 />*/}
-            <h2>lesson_5</h2>
+            {/*<h2>lesson_5</h2>*/}
+            <h2>lesson_6</h2>
         </div>
     );
 }
