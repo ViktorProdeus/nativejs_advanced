@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/nativejs_advanced/static/css/main.d6f8d820.chunk.css",
-    "main.js": "/nativejs_advanced/static/js/main.3307de2d.chunk.js",
-    "main.js.map": "/nativejs_advanced/static/js/main.3307de2d.chunk.js.map",
+    "main.css": "/nativejs_advanced/static/css/main.70a413ce.chunk.css",
+    "main.js": "/nativejs_advanced/static/js/main.57ce03df.chunk.js",
+    "main.js.map": "/nativejs_advanced/static/js/main.57ce03df.chunk.js.map",
     "runtime-main.js": "/nativejs_advanced/static/js/runtime-main.3db5ee9a.js",
     "runtime-main.js.map": "/nativejs_advanced/static/js/runtime-main.3db5ee9a.js.map",
-    "static/js/2.2f200696.chunk.js": "/nativejs_advanced/static/js/2.2f200696.chunk.js",
-    "static/js/2.2f200696.chunk.js.map": "/nativejs_advanced/static/js/2.2f200696.chunk.js.map",
+    "static/js/2.c7f9c7e3.chunk.js": "/nativejs_advanced/static/js/2.c7f9c7e3.chunk.js",
+    "static/js/2.c7f9c7e3.chunk.js.map": "/nativejs_advanced/static/js/2.c7f9c7e3.chunk.js.map",
     "index.html": "/nativejs_advanced/index.html",
-    "static/css/main.d6f8d820.chunk.css.map": "/nativejs_advanced/static/css/main.d6f8d820.chunk.css.map",
-    "static/js/2.2f200696.chunk.js.LICENSE.txt": "/nativejs_advanced/static/js/2.2f200696.chunk.js.LICENSE.txt"
+    "static/css/main.70a413ce.chunk.css.map": "/nativejs_advanced/static/css/main.70a413ce.chunk.css.map",
+    "static/js/2.c7f9c7e3.chunk.js.LICENSE.txt": "/nativejs_advanced/static/js/2.c7f9c7e3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3db5ee9a.js",
-    "static/js/2.2f200696.chunk.js",
-    "static/css/main.d6f8d820.chunk.css",
-    "static/js/main.3307de2d.chunk.js"
+    "static/js/2.c7f9c7e3.chunk.js",
+    "static/css/main.70a413ce.chunk.css",
+    "static/js/main.57ce03df.chunk.js"
   ]
 }
