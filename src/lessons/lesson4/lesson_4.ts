@@ -40,6 +40,49 @@ console.log('lesson 4');
 // описаного выше объекта: свойство promise получает новый созданный промис,
 // свойства resolve и reject получают ссылки на соответствующие функции
 // resolve и reject. Следующие два обработчика запускают методы resolve и reject.
+type HandlePromiseType = {
+    promise: null | Promise<any>,
+    resolve: null | Function,
+    reject: null | Function,
+    onSuccess: (paramName: string) => void
+    onError: (paramName: string) => void
+}
+const handlePromise: HandlePromiseType = {
+    promise: null,
+    resolve: null,
+    reject: null,
+    onSuccess(res: string) {
+        console.log(`Promise is resolved with data: ${res}`)
+    },
+    onError(err: string) {
+        console.log(`Promise is resolved with data: ${err}`)
+    },
+}
+
+export const createPromiseHandler = () => {
+    handlePromise.promise = new Promise((res, rej) => {
+        handlePromise.resolve = res;
+        handlePromise.reject = rej;
+    })
+
+    handlePromise.promise
+    .then(handlePromise.onSuccess)
+    .catch(handlePromise.onError)
+
+    //@ts-ignore
+    window.handleProm = handlePromise
+}
+
+export const resolvePromise = () => {
+    handlePromise.resolve && handlePromise.resolve('1')
+}
+
+export const rejectPromise = () => {
+    handlePromise.reject && handlePromise.reject('0');
+}
+
+
+
 
 
 // Task 06
@@ -57,6 +100,6 @@ console.log('lesson 4');
 // и выведите в консоль {name, age, city}
 
 
-
 // just a plug
-export default ()=>{};
+export default () => {
+};

@@ -1,5 +1,3 @@
-import API from './API';
-
 console.log('lesson 3');
 
 // Event loop
@@ -17,31 +15,30 @@ console.log('lesson 3');
 // https://jsonplaceholder.typicode.com/posts/1
 // https://habr.com/ru/company/oleg-bunin/blog/417461/?_ga=2.54695343.543933152.1602500664-1040035071.1596811661
 
-// let hi = 'Hi hi';
+let hi = 'Hi hi';
 
-// let prom = new Promise((res, rej) => {
-//     let a = 10;
-//     // some async request
-//     res(a);
-//     //rej(0);
-// });
-//
-// console.log(prom)
-//
-// prom
-//     .then(result => {
-//         console.log('then result ', result);
-//         //@ts-ignore
-//         return { data: result + 50, someThingElse: 'Yo'};
-//     })
-//     .then(result2 => {
-//         console.log('then result2 ', result2);
-//         console.log('hi ', hi);
-//     })
-//     .then(result3 => {
-//         console.log('then result3 ', result3);
-//     })
+let prom = new Promise((res, rej) => {
+    let a = 10;
+    // some async request
+    res(a);
+    rej(0);
+});
 
+console.log('prom', prom)
+
+prom
+    .then(result => {
+        console.log('then result ', result);
+        //@ts-ignore
+        return {data: result + 50, someThingElse: 'Yo'};
+    })
+    .then(result2 => {
+        console.log('then result2 ', result2);
+        console.log('hi ', hi);
+    })
+    .then(result3 => {
+        console.log('then result3 ', result3);
+    })
 
 
 // let prom = new Promise((res, rej) => {
@@ -105,9 +102,6 @@ console.log('lesson 3');
 //     })
 
 
-
-
-
 // let prom = new Promise((res, rej) => {
 //     let a = 0;
 //     // some async request
@@ -136,8 +130,6 @@ console.log('lesson 3');
 //     .catch(err3 => {
 //         console.log('catch err3 ', err3);
 //     })
-
-
 
 
 // let prom = new Promise((res, rej) => {
@@ -264,16 +256,15 @@ console.log('lesson 3');
 
 // async function f() {
 //     try {
-//         //...
-//         let response = await 10;
-//         return response;
+//         const response = await Promise.resolve(1000);
+//         return response
 //     } catch (err) {
-//         // rejected case
+//         return err;
 //     }
 // }
 //
 // console.log('Start');
-// console.log('Async function', f());
+// f().then(console.log);
 // console.log('End');
 
 // async function f() {
@@ -293,7 +284,6 @@ console.log('lesson 3');
 // }
 //
 // console.log(f());
-
 
 
 // just a plug
